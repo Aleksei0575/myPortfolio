@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <title>Портфолио frontend junior-разработчик</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Портфолио Алексей Чудновец frontend junior-разработчик">
+
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__wrapper container">
+    <div class="header__logo">
+      <p class="header__title">Алексей Чудновец</p>
+      <p class="header__description">junior frontend-разработчик</p>
+    </div>
+
+    <div class="header__container-nav">
+      <button class="header__open" type="button">Открыть</button>
+      <nav class="header__nav header__nav-button">
+        <ul class="header__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="resume-page.html">Резюме</a></li>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
+
+    <main>
+      <section class="projects">
+        <div class="projects__container container">
+          <h1 class="projects__title">Мои проекты</h1>
+          <ul class="projects__list">
+            <li class="projects__item projects__item--one">
+              <div class="projects__slider">
+                <div class="projects__slider-container">
+                  <ul class="projects__slider-list swiper-wrapper">
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/technomart-mobile@1x.jpg 1x, img/projects/technomart-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/technomart-tablet@1x.jpg 1x, img/projects/technomart-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/technomart-desktop@1x.jpg" srcset="img/projects/technomart-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/technomart-catalog-mobile@1x.jpg 1x, img/projects/technomart-catalog-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/technomart-catalog-tablet@1x.jpg 1x, img/projects/technomart-catalog-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/technomart-catalog-desktop@1x.jpg" srcset="img/projects/technomart-catalog-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <a class="projects__slider-btn projects__slider-btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+                  <svg version="1.1" id="prev_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M45.505,66.506c-2.271,0-4.405-0.884-6.011-2.488L14.988,39.511c-1.646-1.646-2.546-3.921-2.479-6.255
+			              c-0.068-2.337,0.833-4.614,2.479-6.261L39.495,2.489C41.1,0.884,43.233,0,45.505,0c2.271,0,4.405,0.884,6.01,2.489
+			              c3.314,3.314,3.314,8.707,0,12.021L32.771,33.253l18.743,18.742c3.314,3.313,3.314,8.707,0,12.021
+			              C49.908,65.622,47.774,66.506,45.505,66.506z M45.505,4c-1.202,0-2.332,0.468-3.183,1.317L18.291,29.823
+			              c-0.891,0.893-0.833,2.084-0.833,3.355c0,0.051,0,0.102,0,0.151c0,1.271-0.058,2.461,0.833,3.353L42.56,61.188
+			              c0.851,0.851,1.862,1.317,3.063,1.317c1.203,0,2.272-0.468,3.123-1.317c1.755-1.754,1.725-4.609-0.03-6.365L28.544,34.667
+			              c-0.781-0.781-0.788-2.047-0.007-2.828L48.69,11.683c1.754-1.755,1.753-4.61-0.001-6.365C47.84,4.468,46.707,4,45.505,4z"></path>
+                  </svg>
+                </a>
+                <a class="projects__slider-btn projects__slider-btn--next swiper-button-next" href="#next" aria-label="следующий">
+                  <svg version="1.1" id="next_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M21,0c2.271,0,4.405,0.884,6.011,2.489l24.506,24.506c1.646,1.645,2.546,3.921,2.479,6.255
+			                c0.067,2.337-0.833,4.613-2.479,6.261L27.01,64.018c-1.605,1.604-3.739,2.488-6.01,2.488s-4.405-0.884-6.01-2.488
+			                c-3.314-3.314-3.314-8.707,0-12.021l18.743-18.743L14.99,14.511c-3.314-3.314-3.314-8.707,0-12.021C16.597,0.884,18.73,0,21,0z
+			                M21,62.506c1.202,0,2.332-0.468,3.182-1.316l24.033-24.506c0.891-0.894,0.833-2.084,0.833-3.355c0-0.051,0-0.102,0-0.151
+			                c0-1.271,0.058-2.461-0.833-3.353L23.945,5.317C23.095,4.467,22.083,4,20.882,4c-1.203,0-2.273,0.468-3.123,1.317
+			                c-1.755,1.755-1.725,4.61,0.03,6.365l20.172,20.156c0.781,0.781,0.788,2.047,0.007,2.828L17.815,54.822
+			                c-1.754,1.756-1.753,4.611,0.001,6.365C18.666,62.038,19.798,62.506,21,62.506z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="projects__description">
+                <h2 class="projects__description-title">Проект | 01</h2>
+                <div class="projects__description-block">
+                  <h3>Проект| <span>Техномарт</span></h3>
+                  <p>Проект выполнен с нуля в рамках интенсива HTML и CSS, уровень 1. В проекте использовано:</p>
+                  <ul>
+                    <li>Фиксированная вёрстка по макету</li>
+                    <li>HTML5, CSS3</li>
+                    <li>Кроссбраузерность: IE11+, Edge, Chrome, Opera, Safari</li>
+                    <li>Семантичная вёрстка</li>
+                    <li>PerfectPixel</li>
+                    <li>JS, Google.maps API</li>
+                  </ul>
+                  <p>Проект можно посмотреть <a href="https://aleksei0575.github.io/585147-technomart/">здесь &gt;&gt;</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects__item--two">
+              <div class="projects__slider">
+                <div class="projects__slider-container">
+                  <ul class="projects__slider-list swiper-wrapper">
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/sedona-index-mobile@1x.jpg 1x, img/projects/sedona-index-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/sedona-index-tablet@1x.jpg 1x, img/projects/sedona-index-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/sedona-index-desktop@1x.jpg" srcset="img/projects/sedona-index-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/sedona-hotels-mobile@1x.jpg 1x, img/projects/sedona-hotels-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/sedona-hotels-tablet@1x.jpg 1x, img/projects/sedona-hotels-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/sedona-hotels-desktop@1x.jpg" srcset="img/projects/sedona-hotels-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <a class="projects__slider-btn projects__slider-btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+                  <svg version="1.1" id="prev_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M45.505,66.506c-2.271,0-4.405-0.884-6.011-2.488L14.988,39.511c-1.646-1.646-2.546-3.921-2.479-6.255
+			              c-0.068-2.337,0.833-4.614,2.479-6.261L39.495,2.489C41.1,0.884,43.233,0,45.505,0c2.271,0,4.405,0.884,6.01,2.489
+			              c3.314,3.314,3.314,8.707,0,12.021L32.771,33.253l18.743,18.742c3.314,3.313,3.314,8.707,0,12.021
+			              C49.908,65.622,47.774,66.506,45.505,66.506z M45.505,4c-1.202,0-2.332,0.468-3.183,1.317L18.291,29.823
+			              c-0.891,0.893-0.833,2.084-0.833,3.355c0,0.051,0,0.102,0,0.151c0,1.271-0.058,2.461,0.833,3.353L42.56,61.188
+			              c0.851,0.851,1.862,1.317,3.063,1.317c1.203,0,2.272-0.468,3.123-1.317c1.755-1.754,1.725-4.609-0.03-6.365L28.544,34.667
+			              c-0.781-0.781-0.788-2.047-0.007-2.828L48.69,11.683c1.754-1.755,1.753-4.61-0.001-6.365C47.84,4.468,46.707,4,45.505,4z"></path>
+                  </svg>
+                </a>
+                <a class="projects__slider-btn projects__slider-btn--next swiper-button-next" href="#next" aria-label="следующий">
+                  <svg version="1.1" id="next_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M21,0c2.271,0,4.405,0.884,6.011,2.489l24.506,24.506c1.646,1.645,2.546,3.921,2.479,6.255
+			                c0.067,2.337-0.833,4.613-2.479,6.261L27.01,64.018c-1.605,1.604-3.739,2.488-6.01,2.488s-4.405-0.884-6.01-2.488
+			                c-3.314-3.314-3.314-8.707,0-12.021l18.743-18.743L14.99,14.511c-3.314-3.314-3.314-8.707,0-12.021C16.597,0.884,18.73,0,21,0z
+			                M21,62.506c1.202,0,2.332-0.468,3.182-1.316l24.033-24.506c0.891-0.894,0.833-2.084,0.833-3.355c0-0.051,0-0.102,0-0.151
+			                c0-1.271,0.058-2.461-0.833-3.353L23.945,5.317C23.095,4.467,22.083,4,20.882,4c-1.203,0-2.273,0.468-3.123,1.317
+			                c-1.755,1.755-1.725,4.61,0.03,6.365l20.172,20.156c0.781,0.781,0.788,2.047,0.007,2.828L17.815,54.822
+			                c-1.754,1.756-1.753,4.611,0.001,6.365C18.666,62.038,19.798,62.506,21,62.506z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="projects__description">
+                <h2 class="projects__description-title">Проект | 02</h2>
+                <div class="projects__description-block">
+                  <h3>Проект| <span>Седона</span></h3>
+                  <p>Проект выполнен с нуля в рамках интенсива HTML и CSS, уровень 1. В проекте использовано:</p>
+                  <ul>
+                    <li>Фиксированная вёрстка по макету</li>
+                    <li>HTML5, CSS3</li>
+                    <li>Кроссбраузерность: IE11+, Edge, Chrome, Opera, Safari</li>
+                    <li>Семантичная вёрстка</li>
+                    <li>PerfectPixel</li>
+                    <li>JS, Google.maps API</li>
+                  </ul>
+                  <p>Проект можно посмотреть <a href="https://aleksei0575.github.io/585147-sedona-24/">здесь &gt;&gt;</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects__item--three">
+              <div class="projects__slider">
+                <div class="projects__slider-container">
+                  <ul class="projects__slider-list swiper-wrapper">
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/gllacy-index-mobile@1x.jpg 1x, img/projects/gllacy-index-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/gllacy-index-tablet@1x.jpg 1x, img/projects/gllacy-index-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/gllacy-index-desktop@1x.jpg" srcset="img/projects/gllacy-index-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/gllacy-catalog-mobile@1x.jpg 1x, img/projects/gllacy-catalog-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/gllacy-catalog-tablet@1x.jpg 1x, img/projects/gllacy-catalog-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/gllacy-catalog-desktop@1x.jpg" srcset="img/projects/gllacy-catalog-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <a class="projects__slider-btn projects__slider-btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+                  <svg version="1.1" id="prev_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M45.505,66.506c-2.271,0-4.405-0.884-6.011-2.488L14.988,39.511c-1.646-1.646-2.546-3.921-2.479-6.255
+			              c-0.068-2.337,0.833-4.614,2.479-6.261L39.495,2.489C41.1,0.884,43.233,0,45.505,0c2.271,0,4.405,0.884,6.01,2.489
+			              c3.314,3.314,3.314,8.707,0,12.021L32.771,33.253l18.743,18.742c3.314,3.313,3.314,8.707,0,12.021
+			              C49.908,65.622,47.774,66.506,45.505,66.506z M45.505,4c-1.202,0-2.332,0.468-3.183,1.317L18.291,29.823
+			              c-0.891,0.893-0.833,2.084-0.833,3.355c0,0.051,0,0.102,0,0.151c0,1.271-0.058,2.461,0.833,3.353L42.56,61.188
+			              c0.851,0.851,1.862,1.317,3.063,1.317c1.203,0,2.272-0.468,3.123-1.317c1.755-1.754,1.725-4.609-0.03-6.365L28.544,34.667
+			              c-0.781-0.781-0.788-2.047-0.007-2.828L48.69,11.683c1.754-1.755,1.753-4.61-0.001-6.365C47.84,4.468,46.707,4,45.505,4z"></path>
+                  </svg>
+                </a>
+                <a class="projects__slider-btn projects__slider-btn--next swiper-button-next" href="#next" aria-label="следующий">
+                  <svg version="1.1" id="next_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M21,0c2.271,0,4.405,0.884,6.011,2.489l24.506,24.506c1.646,1.645,2.546,3.921,2.479,6.255
+			                c0.067,2.337-0.833,4.613-2.479,6.261L27.01,64.018c-1.605,1.604-3.739,2.488-6.01,2.488s-4.405-0.884-6.01-2.488
+			                c-3.314-3.314-3.314-8.707,0-12.021l18.743-18.743L14.99,14.511c-3.314-3.314-3.314-8.707,0-12.021C16.597,0.884,18.73,0,21,0z
+			                M21,62.506c1.202,0,2.332-0.468,3.182-1.316l24.033-24.506c0.891-0.894,0.833-2.084,0.833-3.355c0-0.051,0-0.102,0-0.151
+			                c0-1.271,0.058-2.461-0.833-3.353L23.945,5.317C23.095,4.467,22.083,4,20.882,4c-1.203,0-2.273,0.468-3.123,1.317
+			                c-1.755,1.755-1.725,4.61,0.03,6.365l20.172,20.156c0.781,0.781,0.788,2.047,0.007,2.828L17.815,54.822
+			                c-1.754,1.756-1.753,4.611,0.001,6.365C18.666,62.038,19.798,62.506,21,62.506z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="projects__description">
+                <h2 class="projects__description-title">Проект | 03</h2>
+                <div class="projects__description-block">
+                  <h3>Проект| <span>Глейси</span></h3>
+                  <p>Проект выполнен с нуля в рамках интенсива HTML и CSS, уровень 1. В проекте использовано:</p>
+                  <ul>
+                    <li>Фиксированная вёрстка по макету</li>
+                    <li>HTML5, CSS3</li>
+                    <li>Кроссбраузерность: IE11+, Edge, Chrome, Opera, Safari</li>
+                    <li>Семантичная вёрстка</li>
+                    <li>PerfectPixel</li>
+                    <li>JS, Google.maps API</li>
+                  </ul>
+                  <p>Проект можно посмотреть <a href="https://aleksei0575.github.io/585147-gllacy/">здесь &gt;&gt;</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects__item--four">
+              <div class="projects__slider">
+                <div class="projects__slider-container">
+                  <ul class="projects__slider-list swiper-wrapper">
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/mishka-index-mobile@1x.jpg 1x, img/projects/mishka-index-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/mishka-index-tablet@1x.jpg 1x, img/projects/mishka-index-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/mishka-index-desktop@1x.jpg" srcset="img/projects/mishka-index-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/mishka-catalog-mobile@1x.jpg 1x, img/projects/mishka-catalog-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/mishka-catalog-tablet@1x.jpg 1x, img/projects/mishka-catalog-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/mishka-catalog-desktop@1x.jpg" srcset="img/projects/mishka-catalog-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/mishka-form-mobile@1x.jpg 1x, img/projects/mishka-form-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/mishka-form-tablet@1x.jpg 1x, img/projects/mishka-form-tablet@2x.jpg 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/mishka-form-desktop@1x.jpg" srcset="img/projects/mishka-form-desktop@2x.jpg 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <a class="projects__slider-btn projects__slider-btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+                  <svg version="1.1" id="prev_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M45.505,66.506c-2.271,0-4.405-0.884-6.011-2.488L14.988,39.511c-1.646-1.646-2.546-3.921-2.479-6.255
+			              c-0.068-2.337,0.833-4.614,2.479-6.261L39.495,2.489C41.1,0.884,43.233,0,45.505,0c2.271,0,4.405,0.884,6.01,2.489
+			              c3.314,3.314,3.314,8.707,0,12.021L32.771,33.253l18.743,18.742c3.314,3.313,3.314,8.707,0,12.021
+			              C49.908,65.622,47.774,66.506,45.505,66.506z M45.505,4c-1.202,0-2.332,0.468-3.183,1.317L18.291,29.823
+			              c-0.891,0.893-0.833,2.084-0.833,3.355c0,0.051,0,0.102,0,0.151c0,1.271-0.058,2.461,0.833,3.353L42.56,61.188
+			              c0.851,0.851,1.862,1.317,3.063,1.317c1.203,0,2.272-0.468,3.123-1.317c1.755-1.754,1.725-4.609-0.03-6.365L28.544,34.667
+			              c-0.781-0.781-0.788-2.047-0.007-2.828L48.69,11.683c1.754-1.755,1.753-4.61-0.001-6.365C47.84,4.468,46.707,4,45.505,4z"></path>
+                  </svg>
+                </a>
+                <a class="projects__slider-btn projects__slider-btn--next swiper-button-next" href="#next" aria-label="следующий">
+                  <svg version="1.1" id="next_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M21,0c2.271,0,4.405,0.884,6.011,2.489l24.506,24.506c1.646,1.645,2.546,3.921,2.479,6.255
+			                c0.067,2.337-0.833,4.613-2.479,6.261L27.01,64.018c-1.605,1.604-3.739,2.488-6.01,2.488s-4.405-0.884-6.01-2.488
+			                c-3.314-3.314-3.314-8.707,0-12.021l18.743-18.743L14.99,14.511c-3.314-3.314-3.314-8.707,0-12.021C16.597,0.884,18.73,0,21,0z
+			                M21,62.506c1.202,0,2.332-0.468,3.182-1.316l24.033-24.506c0.891-0.894,0.833-2.084,0.833-3.355c0-0.051,0-0.102,0-0.151
+			                c0-1.271,0.058-2.461-0.833-3.353L23.945,5.317C23.095,4.467,22.083,4,20.882,4c-1.203,0-2.273,0.468-3.123,1.317
+			                c-1.755,1.755-1.725,4.61,0.03,6.365l20.172,20.156c0.781,0.781,0.788,2.047,0.007,2.828L17.815,54.822
+			                c-1.754,1.756-1.753,4.611,0.001,6.365C18.666,62.038,19.798,62.506,21,62.506z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="projects__description">
+                <h2 class="projects__description-title">Проект | 04</h2>
+                <div class="projects__description-block">
+                  <h3>Проект| <span>Мишка</span></h3>
+                  <p>Проект выполнен с нуля в рамках интенсива HTML и CSS, уровень 2. В проекте использовано:</p>
+                  <ul>
+                    <li>Адаптивная вёрстка: мобильная, планшетная и десктопная версии по макету</li>
+                    <li>PerfectPixel</li>
+                    <li>Использование методологии БЭМ</li>
+                    <li>Кроссбраузерность: IE11+, Edge, Chrome, Opera, Safari</li>
+                    <li>Семантичная вёрстка</li>
+                    <li>Адаптивность графики: ретинизация, векторные изображения</li>
+                    <li>Использование препроцессора: Less</li>
+                    <li>Использование инструмента автоматизиции: Gulp</li>
+                    <li>JS, Google.maps API</li>
+                  </ul>
+                  <p>Проект можно посмотреть <a href="https://github.com/Aleksei0575/585147-mishka-16">здесь &gt;&gt;</a></p>
+                </div>
+              </div>
+            </li>
+            <li class="projects__item projects__item--five">
+              <div class="projects__slider">
+                <div class="projects__slider-container">
+                  <ul class="projects__slider-list swiper-wrapper">
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/keksobooking-mobile@1x.png 1x, img/projects/keksobooking-mobile@2x.png 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/keksobooking-tablet@1x.png 1x, img/projects/keksobooking-tablet@2x.png 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/keksobooking-desktop@1x.png" srcset="img/projects/keksobooking-desktop@2x.png 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                    <li class="projects__slider-item swiper-slide">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="img/projects/keksobooking-form-mobile@1x.png 1x, img/projects/keksobooking-form-mobile@2x.png 2x">
+                        <source media="(max-width: 1023px)" srcset="img/projects/keksobooking-form-tablet@1x.png 1x, img/projects/keksobooking-form-tablet@2x.png 2x">
+                        <!-- 1x: 450px; 2x: 900px;-->
+                        <img src="img/projects/keksobooking-form-desktop@1x.png" srcset="img/projects/keksobooking-form-desktop@2x.png 2x" width="450" height="350" alt="Изображения проекта">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <a class="projects__slider-btn projects__slider-btn--prev swiper-button-prev" href="#prev" aria-label="предыдущий">
+                  <svg version="1.1" id="prev_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M45.505,66.506c-2.271,0-4.405-0.884-6.011-2.488L14.988,39.511c-1.646-1.646-2.546-3.921-2.479-6.255
+			              c-0.068-2.337,0.833-4.614,2.479-6.261L39.495,2.489C41.1,0.884,43.233,0,45.505,0c2.271,0,4.405,0.884,6.01,2.489
+			              c3.314,3.314,3.314,8.707,0,12.021L32.771,33.253l18.743,18.742c3.314,3.313,3.314,8.707,0,12.021
+			              C49.908,65.622,47.774,66.506,45.505,66.506z M45.505,4c-1.202,0-2.332,0.468-3.183,1.317L18.291,29.823
+			              c-0.891,0.893-0.833,2.084-0.833,3.355c0,0.051,0,0.102,0,0.151c0,1.271-0.058,2.461,0.833,3.353L42.56,61.188
+			              c0.851,0.851,1.862,1.317,3.063,1.317c1.203,0,2.272-0.468,3.123-1.317c1.755-1.754,1.725-4.609-0.03-6.365L28.544,34.667
+			              c-0.781-0.781-0.788-2.047-0.007-2.828L48.69,11.683c1.754-1.755,1.753-4.61-0.001-6.365C47.84,4.468,46.707,4,45.505,4z"></path>
+                  </svg>
+                </a>
+                <a class="projects__slider-btn projects__slider-btn--next swiper-button-next" href="#next" aria-label="следующий">
+                  <svg version="1.1" id="next_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.506px" height="66.506px" viewBox="0 0 66.506 66.506">
+                    <path d="M21,0c2.271,0,4.405,0.884,6.011,2.489l24.506,24.506c1.646,1.645,2.546,3.921,2.479,6.255
+			                c0.067,2.337-0.833,4.613-2.479,6.261L27.01,64.018c-1.605,1.604-3.739,2.488-6.01,2.488s-4.405-0.884-6.01-2.488
+			                c-3.314-3.314-3.314-8.707,0-12.021l18.743-18.743L14.99,14.511c-3.314-3.314-3.314-8.707,0-12.021C16.597,0.884,18.73,0,21,0z
+			                M21,62.506c1.202,0,2.332-0.468,3.182-1.316l24.033-24.506c0.891-0.894,0.833-2.084,0.833-3.355c0-0.051,0-0.102,0-0.151
+			                c0-1.271,0.058-2.461-0.833-3.353L23.945,5.317C23.095,4.467,22.083,4,20.882,4c-1.203,0-2.273,0.468-3.123,1.317
+			                c-1.755,1.755-1.725,4.61,0.03,6.365l20.172,20.156c0.781,0.781,0.788,2.047,0.007,2.828L17.815,54.822
+			                c-1.754,1.756-1.753,4.611,0.001,6.365C18.666,62.038,19.798,62.506,21,62.506z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="projects__description">
+                <h2 class="projects__description-title">Проект | 05</h2>
+                <div class="projects__description-block">
+                  <h3>Проект| <span>Кексобукинг</span></h3>
+                  <p>Проект в рамках интенсива JavaScript, уровень 1. В проекте использовано:</p>
+                  <ul>
+                    <li>JavaScript (на готовой вёрстке самостоятельно написаны js-файлы)</li>
+                    <li>Генерация DOM-элементов из шаблона</li>
+                    <li>Обработка пользовательской реакции</li>
+                    <li>Валидация формы</li>
+                    <li>Drag and Drop</li>
+                    <li>Загрузка данных из интернета</li>
+                    <li>Фильтрация данных</li>
+                    <li>Загрузка изображений перетаскиванием</li>
+                  </ul>
+                  <p>Проект можно посмотреть <a href="https://aleksei0575.github.io/585147-keksobooking-17/">здесь &gt;&gt;</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="projects__feedback">
+            <p>Чтобы увидеть больше или договориться о встрече, напишите мне</p>
+            <a href="contacts.html">Написать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="footer__wrapper container">
+    <ul class="footer__list">
+      <li class="footer__item footer__item--phone">
+        <span>
+<!--          <svg width="32" height="32">-->
+<!--            <use xlink:href="img/sprite.svg#icon-phone"></use>-->
+<!--          </svg>-->
+
+          <svg version="1.1" baseProfile="tiny" id="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 24 24" xml:space="preserve">
+            <path d="M20.741,17.218l-0.13-0.162c-1.029-1.301-1.889-1.978-2.627-2.067c-0.638-0.087-1.255,0.354-1.911,0.808l-0.701,0.438
+	          c-0.084,0.042-0.167,0.076-0.245,0.099c-0.41,0.116-1.445,0.184-2.031-0.352c-0.682-0.624-1.74-1.766-2.563-2.764
+	          c-0.786-1.033-1.65-2.321-2.101-3.132C8.051,9.399,8.37,8.438,8.583,8.082c0.042-0.07,0.097-0.139,0.158-0.207l0.618-0.571
+	          c0.009-0.009,0.013-0.02,0.021-0.028C9.386,7.27,9.396,7.272,9.403,7.267c0.558-0.471,1.135-0.956,1.214-1.579
+	          c0.093-0.732-0.362-1.722-1.393-3.022L9.098,2.504C8.46,1.686,7.495,0.449,6.109,0.653C5.564,0.734,5.077,0.92,4.575,1.235
+	          C4.57,1.238,4.567,1.244,4.563,1.247C4.559,1.25,4.554,1.25,4.55,1.253L3.851,1.771C3.844,1.775,3.84,1.784,3.833,1.79
+	          C3.828,1.795,3.82,1.796,3.814,1.801c-0.081,0.068-0.162,0.138-0.242,0.21C2.863,2.643,1.328,4.478,2.375,7.872
+	          c0.676,2.192,2.07,4.75,4.041,7.412L6.397,15.3l1.087,1.354l0.009-0.007c2.137,2.528,4.312,4.482,6.305,5.665
+	          c1.33,0.79,2.492,1.051,3.448,1.051c1.258,0,2.159-0.452,2.611-0.746l0.284-0.19c0.032-0.022,0.055-0.053,0.078-0.081l0.619-0.466
+	          c0.007-0.006,0.011-0.014,0.018-0.02c0.003-0.003,0.008-0.002,0.012-0.005c0.44-0.402,0.745-0.823,0.957-1.322
+	          C22.374,19.254,21.391,18.029,20.741,17.218z M21.09,20.219c-0.165,0.388-0.406,0.718-0.754,1.038l-0.921,0.693
+	          c-0.834,0.542-2.617,1.212-5.207-0.326c-1.993-1.183-4.187-3.183-6.346-5.784l-0.584-0.738c-2.033-2.696-3.463-5.278-4.138-7.466
+	          c-0.877-2.845,0.228-4.371,0.968-5.03c0.075-0.068,0.15-0.131,0.224-0.194l0.003-0.003l0.671-0.497
+	          C5.414,1.654,5.792,1.51,6.227,1.444c0.929-0.14,1.685,0.84,2.24,1.552l0.13,0.165C9.749,4.614,9.86,5.305,9.824,5.587
+	          c-0.04,0.313-0.516,0.714-0.936,1.067l-0.059,0.05C8.827,6.706,8.826,6.709,8.824,6.711C8.821,6.713,8.818,6.714,8.815,6.716
+	          L8.176,7.307C8.172,7.311,8.17,7.316,8.166,7.321S8.154,7.328,8.15,7.333C8.051,7.444,7.966,7.555,7.897,7.67
+	          c-0.359,0.601-0.698,1.843-0.163,2.804c0.467,0.84,1.356,2.167,2.173,3.239c0.854,1.036,1.943,2.212,2.649,2.857
+	          c0.529,0.483,1.265,0.645,1.902,0.645c0.341,0,0.654-0.047,0.891-0.114c0.125-0.036,0.254-0.088,0.387-0.153
+	          c0.008-0.004,0.012-0.011,0.02-0.016c0.004-0.002,0.01-0.001,0.014-0.004l0.742-0.464c0.024-0.016,0.04-0.037,0.06-0.057l0.009,0.01
+	          c0.457-0.317,0.978-0.689,1.304-0.635c0.289,0.035,0.945,0.313,2.099,1.77l0.133,0.167C20.679,18.42,21.449,19.38,21.09,20.219z"></path>
+          </svg>
+        </span>
+        <p>Звоните</p>
+        <a href="tel:+380509348876">+38 (050) 934-88-76</a>
+      </li>
+
+      <li class="footer__item footer__item--mail">
+        <span>
+<!--          <svg width="32" height="32">-->
+<!--            <use xlink:href="img/sprite.svg#icon-mail"></use>-->
+<!--          </svg>-->
+
+          <svg id="icon-mail1" viewBox="0 0 128 128" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M116.73,31.83a3,3,0,0,0-4.2-.61L64.14,67.34a1,1,0,0,1-1.2,0L15.5,31.06a3,3,0,1,0-3.64,4.77L49.16,64.36,12.27,92.16A3,3,0,1,0,15.88,97L54.11,68.14l5.18,4a7,7,0,0,0,8.43.06l5.44-4.06L111.84,97a3,3,0,1,0,3.59-4.81L78.17,64.35,116.12,36A3,3,0,0,0,116.73,31.83Z"></path>
+            <path d="M113,19H15A15,15,0,0,0,0,34V94a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V34A15,15,0,0,0,113,19Zm9,75a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V34a9,9,0,0,1,9-9h98a9,9,0,0,1,9,9Z"></path>
+          </svg>
+        </span>
+        <p>Пишите</p>
+        <a href="mailto:chudnovets0575@gmail.com">chudnovets0575@gmail.com</a>
+      </li>
+
+      <li class="footer__item footer__item--academy">
+        <a href="https://htmlacademy.ru/profile/id585147">
+          Заходите
+<!--          <svg width="32" height="32">-->
+<!--            <use xlink:href="img/sprite.svg#icon-academy"></use>-->
+<!--          </svg>-->
+
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+            <path d="M16 0l-12.635 1.323v23.161l12.635 7.516 12.635-7.516v-23.161l-12.505-1.307zM26.979 23.542l-10.979 6.536-10.979-6.536v-9.49l10.932 6.505 0.016 1.182-7.5-4.469-0.010 1.151 7.531 4.526 0.021 1.208-7.531-4.479-0.010 1.146 7.531 4.526 7.604-4.552v-1.151l-0.010 0.005v-3.74l3.385-2.021zM26.974 12.661l-4.391 2.589-6.615-3.938-0.010 1.146 5.651 3.359-0.047 0.031-0.125 0.073-0.802 0.474-4.667-2.776-0.010 1.141 3.682 2.193-0.87 0.583-0.021 0.010-2.781-1.641-0.010 1.146 1.823 1.078-1.859 1.115-10.88-6.469 10.896-6.547zM26.979 11.51l-11.042-6.51-10.917 6.5v-8.688l10.979-1.151 10.984 1.151v8.693z"></path>
+          </svg>
+        </a>
+      </li>
+
+      <li class="footer__item footer__item--copyright">
+        <span>
+<!--          <svg width="32" height="32">-->
+<!--            <use xlink:href="img/sprite.svg#icon-copyright"></use>-->
+<!--          </svg>-->
+
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="icon-copyright" width="35" height="35" viewBox="0 0 24 24">
+            <path d="M10.08,10.86C10.13,10.53 10.24,10.24 10.38,10C10.5,9.74 10.72,9.53 10.97,9.37C11.21,9.22 11.5,9.15 11.88,9.14C12.11,9.15 12.32,9.19 12.5,9.27C12.71,9.36 12.89,9.5 13.03,9.63C13.17,9.78 13.28,9.96 13.37,10.16C13.46,10.36 13.5,10.58 13.5,10.8H15.3C15.28,10.33 15.19,9.9 15,9.5C14.85,9.12 14.62,8.78 14.32,8.5C14,8.22 13.66,8 13.24,7.84C12.82,7.68 12.36,7.61 11.85,7.61C11.2,7.61 10.63,7.72 10.15,7.95C9.67,8.18 9.27,8.5 8.95,8.87C8.63,9.26 8.39,9.71 8.24,10.23C8.09,10.75 8,11.29 8,11.87V12.14C8,12.72 8.08,13.26 8.23,13.78C8.38,14.3 8.62,14.75 8.94,15.13C9.26,15.5 9.66,15.82 10.14,16.04C10.62,16.26 11.19,16.38 11.84,16.38C12.31,16.38 12.75,16.3 13.16,16.15C13.57,16 13.93,15.79 14.24,15.5C14.55,15.25 14.8,14.94 15,14.58C15.16,14.22 15.27,13.84 15.28,13.43H13.5C13.5,13.64 13.43,13.83 13.34,14C13.25,14.19 13.13,14.34 13,14.47C12.83,14.6 12.66,14.7 12.46,14.77C12.27,14.84 12.07,14.86 11.86,14.87C11.5,14.86 11.2,14.79 10.97,14.64C10.72,14.5 10.5,14.27 10.38,14C10.24,13.77 10.13,13.47 10.08,13.14C10.03,12.81 10,12.47 10,12.14V11.87C10,11.5 10.03,11.19 10.08,10.86M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20Z"></path>
+          </svg>
+        </span>
+        <p>&copy; 2020 Алексей Чудновец</p>
+        <p>Все права защищены</p>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
